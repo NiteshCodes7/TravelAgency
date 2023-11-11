@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Josefin Sans', sans-serif;;
+}
+
+header{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('/2.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    height: 12vh;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    width: 35%;
+    justify-content: right;
+    justify-content: space-evenly;
+}
+
+.logo{
+    display: flex;
+    width: 25%;
+    margin: 2px 80px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav{
+    margin: 20px 0px;
+    padding: 10px 0px;
+    font-size: 25px;
+    
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+}
+.nav a:hover{
+    color: #00b894;
+    text-decoration: underline;
+}
+.nav:first-child{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 270px auto;
+    color: white;
+    text-align: center;
+}
+
+section h3{
+    font-size: 55px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+section h1{
+    font-size: 72px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+    margin: 30px 0px 35px 0px;
+}
+
+section p{
+    font-size: 32px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.btn a{
+    display: inline-block;
+    padding: 15px 50px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+}
+
+ #btn1{
+     background: #fff;
+     color: #000; 
+     margin: auto 20px;
+ }
+ #btn1:hover{
+    background: #00b894;
+    color: white;
+ }
+
+ #btn2{
+     background: #00b894;
+     color: white;
+ }
+ #btn2:hover{
+     background: #fff;
+     color: #000;
+ }
+
+ .sp::after{
+    content: "";
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+ }
+
+ @keyframes changetext {
+     0%{ content: "Darjeeling";}
+     20%{ content: "Agra"}
+     35%{ content: "Kolkata"}
+     45%{ content: "Madurai"}
+     55%{ content: "Leh-Ladakh"}
+     60%{ content: "Mumbai"}
+     70%{ content: "Varanasi"}
+     80%{ content: "Delhi"}
+     100%{ content: "Jaipur"}
+ }
